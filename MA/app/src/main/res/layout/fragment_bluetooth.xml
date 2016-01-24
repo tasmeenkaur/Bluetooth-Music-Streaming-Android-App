@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_paired_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="@string/label_paired_devices" />
+
+    <Spinner
+        android:id="@+id/spinner_paired_devices"
+        android:layout_toRightOf="@id/textView_paired_devices"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_below="@id/spinner_paired_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/connect" />
+
+    <Button
+        android:id="@+id/btn_stream_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_paired_devices"
+        android:layout_alignParentRight="true"
+        android:enabled="false"
+        android:text="@string/stream_audio" />
+
+
+</RelativeLayout>
